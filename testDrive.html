@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2008 model</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <style>
+        .buttuncss {
+            background-color: black;
+            color: white;
+            padding: 30px;
+            margin: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Nav -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Peugeot</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">OUR MODELS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OFFER</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TEST DRIVE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  <!--  -->
+    <img src="https://www.peugeot.co.th/content/dam/peugeot/thailand/offers/0923/peugeot-offers-09-23.jpg?imwidth=1920" alt="leo season" class="img-fluid" style="width: 100%;">
+<!--  -->
+    <div class="container-fluid p-5">
+      <h1 class="mb-5" style="font-weight: bold;">REGISTER YOUR INTEREST</h1>
+      <div class="card p-5 mb-5">
+        <form class="row g-3">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">ชื่อ</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ชื่อ">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">นามสกุล</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="นามสกุล">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">นามสกุล</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ok@gmail.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">เบอร์ติดต่อ</label>
+            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="082-568-4892">
+          </div>
+          <label for="exampleDataList" class="form-label">สาขาที่สนใจ</label>
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="กรุณาเลือกสาขา">
+          <datalist id="datalistOptions">
+            <option value="สาขาสุขุมวิท">
+            <option value="สาขาเกษตรนวมินทร์">
+            <option value="สาขาเยาวราช">
+            <option value="สาขาสยามพารากอน">
+            <option value="สาขาธนบุรี-ราชพฤกษ์">
+            <option value="สาขามีนบุรี">
+            <option value="สาขาอุบลราชธานี">
+            <option value="สาขาพัทยา">
+            <option value="สาขาภูเก็ต">
+            <option value="สาขาหาดใหญ่">
+          </datalist>
+          <label for="modelDataList" class="form-label">กรุณาเลือกรุ่นที่สนใจ</label>
+          <input class="form-control" list="modellistOptions" id="modelDataList" placeholder="กรุณาเลือกรุ่นที่ท่านสนใจ">
+          <datalist id="modellistOptions">
+            <option value="Peugeot-2008 SUV">
+            <option value="Peugeot-3008 SUV">
+            <option value="Peugeot-5008 7-Seat SUV">
+            <option value="Peugeot e -2008">
+            <option value="Peugeot-408">
+            </datalist>
+          <label for="testDataList" class="form-label">ท่านต้องการ Test Drive หรือไม่</label>
+          <input class="form-control" list="testlistOptions" id="testDataList" placeholder="...">
+          <datalist id="testlistOptions">
+            <option value="ต้องการ Test Drive">
+            <option value="ไม่ต้องการ Test Drive">
+            </datalist>
+          <label for="timeDataList" class="form-label">ท่านมีแผนที่จะซื้อรถยนต์คันใหม่ภายในระยะเวลา</label>
+          <input class="form-control" list="timelistOptions" id="timeDataList" placeholder="ภายในเดือนนี้">
+          <datalist id="timelistOptions">
+            <option value="ภายในเดือนนี้">
+            <option value="ระหว่าง 1-3 เดือนนี้">
+            <option value="มากกว่า 3 เดือนขึ้นไป">
+            </datalist>
+
+            <p>ภายใต้พระราชบัญญัติคุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562 ในบางกรณี เราจำเป็นจะต้องขอความยินยอมในการใช้ "ข้อมูลส่วนบุคคล" ของท่าน โปรดกดกล่องเพื่อให้ความยินยอมแก่เราในการพัฒนาประสบการณ์ตลอดจนตอบสนองสิ่งที่ท่านต้องการในอนาคตแก่ท่าน</p>
+            <p><input type="checkbox" name="agreeCheckbox" id="agreeCheckbox">  ข้าพเจ้ายินยอมให้ บริษัท เบลฟอร์ต ออโตโมบิล (ประเทศไทย) จำกัด ("บริษัทฯ") จัดเก็บรวบรวม และ/หรือใช้ข้อมูลส่วนบุคคลของข้าพเจ้าที่มีอยู่กับบริษัทฯ เพื่อประโยชน์ในการวิเคราะห์วิจัยทางการตลาด และการประชาสัมพันธ์การขาย รวมถึงเพื่อปรับปรุงและพัฒนาผลิตภัณฑ์และการบริการ ทั้งนี้ เพื่อประโยชน์ในการต่างๆ ข้างตัน บริษัทฯ อาจเปิดเผยข้อมูลส่วนบุคคลดังกล่าวให้แก่บริษัทในเครือตัวแทนหรือผู้จัดจำหน่าย รวมถึงผู้รับข้อมูลซึ่งเป็นซัพพลายเออร์ของบริษัทฯ ในต่างประเทศได้ตามความเหมาะสมและจำเป็น ภายใต้มาตรฐานการคุ้มครองข้อมูลส่วนบุคคลที่ปลอดภัยและสอดคล้องกับกฎหมายที่บังคับใช้ในปัจจุบัน และ/หรือที่จะปรับปรุงต่อไปในอนาคต (หากมี)</p>
+
+            <button class="btn btn-primary" type="submit">ลงทะเบียน</button>
+        </form>    
+    </div>
+    </div>
+
+
+
+
+  <!-- FOOTER -->
+    <div class="container-fluid">
+        <div class="row">
+            <button class="col-md-4 buttuncss"> BOOK A TEST DRIVE</button>
+            <button class="col-md-4 buttuncss">FAQ</button>
+            <button class="col-md-4 buttuncss">CONTACT</button>
+        </div>
+    </div>
+
+    <div style="text-align: center; background-color: black; padding: 50px;">
+        <img src="https://img.remediosdigitales.com/fe2b8e/peugeot-nuevo-logo-2021_/450_1000.jpg" alt="logo">
+        <p style="color: gray;">Privacy Policy | Cookie Preferences</p>
+    </div>
+    
+
+
+
+
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+        })
+    })()
+    </script>
+</body>
+</html>
