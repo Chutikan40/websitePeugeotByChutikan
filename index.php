@@ -1,3 +1,5 @@
+<?php include('server.php');?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +31,7 @@
                     <a class="nav-link" href="#">OFFER</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./testDrive.html">TEST DRIVE</a>
+                    <a class="nav-link" href="./testDrive.php">TEST DRIVE</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">CONTACT US</a>
