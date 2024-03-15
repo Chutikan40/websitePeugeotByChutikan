@@ -16,26 +16,26 @@ if ($conn->connect_error) {
     echo "การเชื่อมต่อสำเร็จแล้ว";
 }
 
-// รับข้อมูลจากแบบฟอร์ม
-$first_name = $_POST["first_name"];
-$last_name = $_POST["last_name"];
-$email = $_POST["email"];
-$phone_number = $_POST["phone_number"];
-$interested_branch = $_POST["interested_branch"];
-$interested_car_model = $_POST["interested_car_model"];
-$test_drive_interest = $_POST["test_drive_interest"];
-$buying_timeline = $_POST["buying_timeline"];
+// // รับข้อมูลจากแบบฟอร์ม
+// $first_name = $_POST["first_name"];
+// $last_name = $_POST["last_name"];
+// $email = $_POST["email"];
+// $phone_number = $_POST["phone_number"];
+// $interested_branch = $_POST["interested_branch"];
+// $interested_car_model = $_POST["interested_car_model"];
+// $test_drive_interest = $_POST["test_drive_interest"];
+// $buying_timeline = $_POST["buying_timeline"];
 
-// เตรียมคำสั่ง SQL INSERT
-$sql = "INSERT INTO testdrive (first_name, last_name, email, phone_number, interested_branch, interested_car_model, test_drive_interest, buying_timeline) 
-VALUES ('$first_name', '$last_name', '$email', '$phone_number', '$interested_branch', '$interested_car_model', '$test_drive_interest', '$buying_timeline')";
+// // เตรียมคำสั่ง SQL INSERT
+// $sql = "INSERT INTO testdrive (first_name, last_name, email, phone_number, interested_branch, interested_car_model, test_drive_interest, buying_timeline) 
+// VALUES ('$first_name', '$last_name', '$email', '$phone_number', '$interested_branch', '$interested_car_model', '$test_drive_interest', '$buying_timeline')";
 
-// ทำการเพิ่มข้อมูลลงในตาราง
-if ($conn->query($sql) === TRUE) {
-    echo "เพิ่มข้อมูลเรียบร้อยแล้ว";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
+// // ทำการเพิ่มข้อมูลลงในตาราง
+// if ($conn->query($sql) === TRUE) {
+//     echo "เพิ่มข้อมูลเรียบร้อยแล้ว";
+// } else {
+//     echo "Error: " . $sql . "<br>" . $conn->error;
+// }
 
 
 // ปิดการเชื่อมต่อ

@@ -28,9 +28,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="./index.php">OUR MODELS</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">OFFER</a>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#">TEST DRIVE</a>
               </li>
@@ -128,62 +126,32 @@
         <p style="color: gray;">Privacy Policy | Cookie Preferences</p>
     </div>
     
-    <?php
-  // ตรวจสอบว่ามีข้อมูลที่ถูกส่งมาหรือไม่
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-      // รับข้อมูลจากฟอร์มและเก็บไว้ในตัวแปร
-      $first_name = $_POST["first_name"];
-      $last_name = $_POST["last_name"];
-      $email = $_POST["email"];
-      $phone_number	 = $_POST["phone_number"];
-      $interested_branch = $_POST["interested_branch"];
-      $interested_car_model = $_POST["interested_car_model"];
-      $test_drive_interest = $_POST["test_drive_interest"];
-      $buying_timeline = $_POST["buying_timeline"];
-      // ทำสิ่งที่ต้องการกับข้อมูลที่ได้รับ
-  }
-  ?>
-    <?php
-  // ตรวจสอบว่ามีข้อมูลที่ถูกส่งมาหรือไม่
-  if ($_SERVER["REQUEST_METHOD"] == "GET") {
-      // รับข้อมูลจากฟอร์มและเก็บไว้ในตัวแปร
-      $first_name = $_GET["first_name"];
-      $last_name = $_GET["last_name"];
-      $email = $_GET["email"];
-      $phone_number	 = $_GET["phone_number"];
-      $interested_branch = $_GET["interested_branch"];
-      $interested_car_model = $_GET["interested_car_model"];
-      $test_drive_interest = $_GET["test_drive_interest"];
-      $buying_timeline = $_GET["buying_timeline"];
-      // ทำสิ่งที่ต้องการกับข้อมูลที่ได้รับ
-  }
-  ?>
 
 
 
 
 
-    <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-    'use strict'
+        <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
 
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.querySelectorAll('.needs-validation')
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
 
-    // Loop over them and prevent submission
-    Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-        form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-            event.preventDefault()
-            event.stopPropagation()
-            }
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
 
-            form.classList.add('was-validated')
-        }, false)
-        })
-    })()
-    </script>
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+        </script>
 </body>
 </html>
